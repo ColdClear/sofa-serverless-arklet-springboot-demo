@@ -1,0 +1,355 @@
+2023-08-12 13:44:53.239 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8252 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 13:44:53.247 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 13:44:59.872 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 13:44:59.924 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 13:45:00.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 13:45:00.212 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 13:45:00.212 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 13:45:00.221 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 13:45:00.221 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 13:45:00.221 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 13:45:00.320 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 13:45:03.494 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 13:45:03.495 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 10193 ms
+2023-08-12 13:45:03.910 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 13:45:04.009 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 13:45:04.064 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 13:45:04.694 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b] REGISTERED
+2023-08-12 13:45:04.696 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 13:45:04.699 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 13:45:04.944 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 13:45:04.991 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 13:45:05.009 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 13:45:05.083 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 17.72 seconds (JVM running for 21.966)
+2023-08-12 13:48:15.024 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xe40f3361, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60968]
+2023-08-12 13:48:15.033 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:48:15.034 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xc9b044cb, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60969]
+2023-08-12 13:48:15.035 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:48:20.045 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xe84a39d5, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60973]
+2023-08-12 13:48:20.045 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:48:20.046 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xdcb6900c, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60974]
+2023-08-12 13:48:20.047 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:48:43.541 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x5cf7cb2f, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60994]
+2023-08-12 13:48:43.541 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:48:43.542 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xd42f1f5a, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:60995]
+2023-08-12 13:48:43.543 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:49:53.256 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xd698fefe, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61025]
+2023-08-12 13:49:53.302 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:49:53.303 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x6030bde2, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61027]
+2023-08-12 13:49:53.303 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:17.402 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xc892aff7, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61205]
+2023-08-12 13:54:17.405 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:17.408 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xfa6e2712, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61206]
+2023-08-12 13:54:17.408 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:27.949 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x2e6f71f6, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61212]
+2023-08-12 13:54:27.949 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:27.952 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x26bc1aba, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61213]
+2023-08-12 13:54:27.952 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:28.195 [nioEventLoopGroup-3-4] INFO  c.a.s.s.a.s.d.b.BookstoreProviderApplication - Starting BookstoreProviderApplication on DESKTOP-EQ2LQMG with PID 8252 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-provider\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 13:54:28.196 [nioEventLoopGroup-3-4] INFO  c.a.s.s.a.s.d.b.BookstoreProviderApplication - No active profile set, falling back to default profiles: default
+2023-08-12 13:54:29.068 [nioEventLoopGroup-3-4] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [provider1] does not meet these criteria and has been changed to [/provider1]
+2023-08-12 13:54:29.129 [nioEventLoopGroup-3-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[provider1] - Initializing Spring embedded WebApplicationContext
+2023-08-12 13:54:29.129 [nioEventLoopGroup-3-4] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 927 ms
+2023-08-12 13:54:29.203 [nioEventLoopGroup-3-4] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 13:54:29.205 [nioEventLoopGroup-3-4] INFO  org.apache.catalina.util.LifecycleBase - The start() method was called on component [StandardServer[-1]] after start() had already been called. The second call will be ignored.
+2023-08-12 13:54:29.290 [nioEventLoopGroup-3-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 13:54:29.334 [nioEventLoopGroup-3-4] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2023-08-12 13:54:29.474 [nioEventLoopGroup-3-4] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 13:54:29.514 [nioEventLoopGroup-3-4] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/provider1'
+2023-08-12 13:54:29.534 [nioEventLoopGroup-3-4] INFO  c.a.s.s.a.s.d.b.BookstoreProviderApplication - Started BookstoreProviderApplication in 1.396 seconds (JVM running for 586.417)
+2023-08-12 13:54:32.609 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x3b99453e, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61217]
+2023-08-12 13:54:32.610 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 13:54:32.611 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xd28f6322, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61218]
+2023-08-12 13:54:32.611 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 14:03:24.295 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x8012567d, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61573]
+2023-08-12 14:03:24.304 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 14:03:24.315 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xa1da6f94, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:61574]
+2023-08-12 14:03:24.316 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 14:08:52.177 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 14:08:52.180 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 14:08:52.180 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xca70760b, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 14:08:52.686 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 14:08:52.695 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 15:34:40.172 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8136 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 15:34:40.173 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 15:34:41.841 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 15:34:41.865 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 15:34:42.040 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 15:34:42.062 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 15:34:42.063 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 15:34:42.074 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 15:34:42.074 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 15:34:42.074 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 15:34:42.102 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 15:34:42.401 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 15:34:42.402 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2187 ms
+2023-08-12 15:34:42.773 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 15:34:42.845 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 15:34:42.888 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 15:34:43.286 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790] REGISTERED
+2023-08-12 15:34:43.288 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 15:34:43.291 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 15:34:43.500 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 15:34:43.537 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 15:34:43.550 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 15:34:43.618 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 8.716 seconds (JVM running for 10.875)
+2023-08-12 15:35:02.342 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 15:35:02.344 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 15:35:02.345 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x15049790, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 15:35:02.363 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 15:58:25.954 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10536 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 15:58:25.955 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 15:58:28.015 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 15:58:28.039 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 15:58:28.216 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 15:58:28.233 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 15:58:28.233 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 15:58:28.242 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 15:58:28.242 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 15:58:28.242 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 15:58:28.265 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 15:58:28.515 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 15:58:28.516 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2508 ms
+2023-08-12 15:58:28.874 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 15:58:28.956 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 15:58:29.004 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 15:58:29.391 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285] REGISTERED
+2023-08-12 15:58:29.394 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 15:58:29.396 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 15:58:29.596 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 15:58:29.629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 15:58:29.640 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 15:58:29.715 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.074 seconds (JVM running for 9.887)
+2023-08-12 16:00:33.081 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xe929b890, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8681]
+2023-08-12 16:00:33.085 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:00:33.086 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x4a4bac64, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8682]
+2023-08-12 16:00:33.086 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:01:53.797 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x00f73c53, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8703]
+2023-08-12 16:01:53.802 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:01:53.803 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x6e51e290, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8704]
+2023-08-12 16:01:53.806 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:05.818 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x270cd692, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8708]
+2023-08-12 16:02:05.818 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:05.821 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xfb0fba9b, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8709]
+2023-08-12 16:02:05.821 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:21.487 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xcfa401f5, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8711]
+2023-08-12 16:02:21.488 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:21.490 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x9520ece8, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8712]
+2023-08-12 16:02:21.490 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:27.819 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x4fc7230a, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8713]
+2023-08-12 16:02:27.819 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:27.820 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x951f0932, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8714]
+2023-08-12 16:02:27.821 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:28.037 [nioEventLoopGroup-3-2] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - Starting BookstoreOrderProviderApplication on DESKTOP-EQ2LQMG with PID 10536 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-order-provider\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 16:02:28.037 [nioEventLoopGroup-3-2] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - No active profile set, falling back to default profiles: default
+2023-08-12 16:02:28.844 [nioEventLoopGroup-3-2] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [order-provider] does not meet these criteria and has been changed to [/order-provider]
+2023-08-12 16:02:28.896 [nioEventLoopGroup-3-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[order-provider] - Initializing Spring embedded WebApplicationContext
+2023-08-12 16:02:28.896 [nioEventLoopGroup-3-2] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 852 ms
+2023-08-12 16:02:28.955 [nioEventLoopGroup-3-2] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 16:02:28.956 [nioEventLoopGroup-3-2] INFO  org.apache.catalina.util.LifecycleBase - The start() method was called on component [StandardServer[-1]] after start() had already been called. The second call will be ignored.
+2023-08-12 16:02:29.026 [nioEventLoopGroup-3-2] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 16:02:29.072 [nioEventLoopGroup-3-2] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][nioEventLoopGroup-3-2] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 16:02:29.186 [nioEventLoopGroup-3-2] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 16:02:29.202 [nioEventLoopGroup-3-2] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/order-provider'
+2023-08-12 16:02:29.218 [nioEventLoopGroup-3-2] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - Started BookstoreOrderProviderApplication in 1.231 seconds (JVM running for 249.39)
+2023-08-12 16:02:33.516 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x1c0d7a3a, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8723]
+2023-08-12 16:02:33.516 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:02:33.517 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xd92d8801, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8724]
+2023-08-12 16:02:33.518 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:03:09.756 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[order-provider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 16:03:09.756 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 16:03:09.817 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 61 ms
+2023-08-12 16:20:48.351 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x262e8584, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8990]
+2023-08-12 16:20:48.355 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:20:48.356 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x427c2e9b, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8991]
+2023-08-12 16:20:48.357 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:21:06.725 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xb4c6e52d, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8992]
+2023-08-12 16:21:06.726 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:21:06.731 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x97558b34, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8993]
+2023-08-12 16:21:06.731 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:21:07.014 [nioEventLoopGroup-3-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 16:21:09.936 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x48f61654, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8995]
+2023-08-12 16:21:09.937 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 16:21:09.938 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x733585a9, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:8996]
+2023-08-12 16:21:09.941 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x87b8f285, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 17:58:37.923 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 5916 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 17:58:37.924 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 17:58:39.451 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 17:58:39.467 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 17:58:39.590 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 17:58:39.606 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 17:58:39.606 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 17:58:39.613 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 17:58:39.614 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 17:58:39.614 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 17:58:39.632 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 17:58:39.835 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 17:58:39.835 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1866 ms
+2023-08-12 17:58:40.136 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 17:58:40.223 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 17:58:40.267 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 17:58:40.680 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9] REGISTERED
+2023-08-12 17:58:40.686 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 17:58:40.688 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 17:58:40.867 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 17:58:40.902 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 17:58:40.914 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 17:58:40.963 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 6.131 seconds (JVM running for 11.187)
+2023-08-12 18:00:26.127 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xf99e5530, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:5766]
+2023-08-12 18:00:26.134 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 18:00:26.136 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x190d1fcc, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:5767]
+2023-08-12 18:00:26.136 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 18:05:38.539 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 18:05:38.541 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 18:05:38.541 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x224e10f9, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 18:05:38.645 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 21:59:55.255 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 6308 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 21:59:55.256 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 21:59:57.497 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 21:59:57.539 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 21:59:57.697 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 21:59:57.715 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 21:59:57.716 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 21:59:57.724 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 21:59:57.725 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 21:59:57.725 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 21:59:57.746 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 21:59:58.007 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 21:59:58.007 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2666 ms
+2023-08-12 21:59:58.474 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 21:59:58.630 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 21:59:58.707 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 21:59:59.296 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd] REGISTERED
+2023-08-12 21:59:59.299 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 21:59:59.301 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 21:59:59.523 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 21:59:59.557 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 21:59:59.571 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 21:59:59.632 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 8.284 seconds (JVM running for 12.264)
+2023-08-12 22:01:09.993 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x5e0740ba, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:64653]
+2023-08-12 22:01:09.997 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:01:09.998 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x70136066, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:64654]
+2023-08-12 22:01:09.998 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:01:14.992 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x1288a914, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:64659]
+2023-08-12 22:01:14.993 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:09:10.728 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x066535d5, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:1800]
+2023-08-12 22:09:10.739 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:09:10.740 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x3b8c36b5, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:1801]
+2023-08-12 22:09:10.741 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:09:11.369 [nioEventLoopGroup-3-5] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - Starting BookstoreOrderProviderApplication on DESKTOP-EQ2LQMG with PID 6308 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-order-provider\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 22:09:11.369 [nioEventLoopGroup-3-5] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - No active profile set, falling back to default profiles: default
+2023-08-12 22:09:12.345 [nioEventLoopGroup-3-5] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [order-provider] does not meet these criteria and has been changed to [/order-provider]
+2023-08-12 22:09:12.424 [nioEventLoopGroup-3-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[order-provider] - Initializing Spring embedded WebApplicationContext
+2023-08-12 22:09:12.424 [nioEventLoopGroup-3-5] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1042 ms
+2023-08-12 22:09:12.635 [nioEventLoopGroup-3-5] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 22:09:12.636 [nioEventLoopGroup-3-5] INFO  org.apache.catalina.util.LifecycleBase - The start() method was called on component [StandardServer[-1]] after start() had already been called. The second call will be ignored.
+2023-08-12 22:09:12.740 [nioEventLoopGroup-3-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:09:12.789 [nioEventLoopGroup-3-5] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][nioEventLoopGroup-3-5] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 22:09:12.927 [nioEventLoopGroup-3-5] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 22:09:12.945 [nioEventLoopGroup-3-5] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/order-provider'
+2023-08-12 22:09:12.965 [nioEventLoopGroup-3-5] INFO  c.a.s.s.a.s.d.b.BookstoreOrderProviderApplication - Started BookstoreOrderProviderApplication in 1.68 seconds (JVM running for 565.598)
+2023-08-12 22:09:28.104 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[order-provider] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 22:09:28.104 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 22:09:28.119 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2023-08-12 22:09:30.131 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 22:09:30.131 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 22:09:30.140 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2023-08-12 22:12:37.574 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 22:12:37.576 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 22:12:37.577 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xedc548bd, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 22:12:37.654 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:12:37.679 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:12:59.375 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 12744 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 22:12:59.377 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 22:13:01.601 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 22:13:01.630 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 22:13:01.816 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:13:01.838 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 22:13:01.839 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 22:13:01.847 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 22:13:01.847 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 22:13:01.847 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 22:13:01.868 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 22:13:02.150 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 22:13:02.150 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2709 ms
+2023-08-12 22:13:02.485 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:13:02.562 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 22:13:02.611 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 22:13:03.180 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c] REGISTERED
+2023-08-12 22:13:03.182 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 22:13:03.185 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 22:13:03.379 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 22:13:03.408 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:13:03.423 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 22:13:03.483 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 17.779 seconds (JVM running for 21.598)
+2023-08-12 22:13:16.804 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 22:13:16.804 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 22:13:16.812 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-08-12 22:15:21.522 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 22:15:21.528 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 22:15:21.528 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdf639e0c, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 22:15:21.588 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:15:35.798 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 14432 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 22:15:35.799 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 22:15:37.674 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 22:15:37.727 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 22:15:37.917 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:15:37.933 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 22:15:37.933 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 22:15:37.941 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 22:15:37.942 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 22:15:37.942 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 22:15:37.966 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 22:15:38.375 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 22:15:38.376 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2531 ms
+2023-08-12 22:15:38.885 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:15:39.121 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 22:15:39.362 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 22:15:41.973 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf] REGISTERED
+2023-08-12 22:15:41.978 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 22:15:41.982 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 22:15:43.536 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 22:15:43.669 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:15:43.693 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 22:15:43.850 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 11.199 seconds (JVM running for 13.961)
+2023-08-12 22:15:43.923 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 22:15:43.923 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 22:15:43.935 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+2023-08-12 22:18:02.214 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 22:18:02.220 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 22:18:02.221 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x184420bf, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 22:18:02.724 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:18:47.289 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10636 (D:\items\SofaArk\sofa-serverless-arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\items\SofaArk\sofa-serverless-arklet-springboot-demo)
+2023-08-12 22:18:47.292 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-08-12 22:18:49.775 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-08-12 22:18:49.811 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-08-12 22:18:50.046 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:18:50.071 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-08-12 22:18:50.071 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-08-12 22:18:50.085 [main] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded Apache Tomcat Native library [1.2.33] using APR version [1.7.0].
+2023-08-12 22:18:50.086 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2023-08-12 22:18:50.086 [main] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-08-12 22:18:50.111 [main] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1o  3 May 2022]
+2023-08-12 22:18:50.435 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-08-12 22:18:50.436 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3046 ms
+2023-08-12 22:18:50.988 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-08-12 22:18:51.127 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-08-12 22:18:51.211 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-08-12 22:18:52.075 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17] REGISTERED
+2023-08-12 22:18:52.079 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17] BIND: 0.0.0.0/0.0.0.0:1238
+2023-08-12 22:18:52.082 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-08-12 22:18:52.516 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 4 endpoint(s) beneath base path '/actuator'
+2023-08-12 22:18:52.576 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-12 22:18:52.599 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-12 22:18:52.690 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 11.312 seconds (JVM running for 20.563)
+2023-08-12 22:19:08.434 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-08-12 22:19:08.435 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-08-12 22:19:08.450 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+2023-08-12 22:20:25.256 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x4df792e0, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:15967]
+2023-08-12 22:20:25.262 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:20:25.264 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xa827e5b1, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:15968]
+2023-08-12 22:20:25.265 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-08-12 22:21:12.348 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-08-12 22:21:12.348 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-08-12 22:21:12.349 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8bef1e17, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-08-12 22:21:12.408 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

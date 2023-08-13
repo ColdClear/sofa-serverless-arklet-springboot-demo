@@ -2,8 +2,7 @@
   
 基于[sofa-ark-dynamic-guides](https://github.com/sofastack-guides/sofa-ark-dynamic-guides/tree/master)的实验模板，使用Sofa-Severless的http调用工具Akrlet，通过 [SOFAArk](https://github.com/sofastack/sofa-ark) 提供的动态模块能力，实现商品列表排序策略的动态变更，以及动态装卸订单查询子应用。能够完成在不重启宿主机，不更改应用配置的情况下实现应用行为改变的任务。
 
-```toc
-```
+> *注意，本实验由于未将 arklet 上传至 maven repository，因此需要对 arklet 中的 arklet-springboot-starter 执行 `mvn clean install` 打出本地的 jar 包，后供 demo 引用*
 
 ## 实验准备
 

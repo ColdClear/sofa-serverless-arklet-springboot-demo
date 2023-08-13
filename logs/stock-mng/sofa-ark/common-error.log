@@ -1,0 +1,14 @@
+2023-08-11 00:03:13,482 ERROR Thread-1                         - Unable to stop embedded Tomcat
+org.apache.catalina.LifecycleException: An invalid Lifecycle transition was attempted ([before_destroy]) for component [StandardServer[-1]] in state [STARTED]
+	at org.apache.catalina.util.LifecycleBase.invalidTransition(LifecycleBase.java:430)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:316)
+	at org.apache.catalina.startup.Tomcat.destroy(Tomcat.java:508)
+	at com.alipay.sofa.ark.web.embed.WebPluginActivator.stop(WebPluginActivator.java:48)
+	at com.alipay.sofa.ark.container.model.PluginModel.stop(PluginModel.java:342)
+	at com.alipay.sofa.ark.container.service.plugin.PluginDeployServiceImpl.unDeployPlugin(PluginDeployServiceImpl.java:88)
+	at com.alipay.sofa.ark.container.service.plugin.PluginDeployServiceImpl.unDeploy(PluginDeployServiceImpl.java:75)
+	at com.alipay.sofa.ark.container.service.plugin.PluginDeployServiceImpl.dispose(PluginDeployServiceImpl.java:104)
+	at com.alipay.sofa.ark.container.service.ArkServiceContainer.stop(ArkServiceContainer.java:144)
+	at com.alipay.sofa.ark.container.ArkContainer.stop(ArkContainer.java:263)
+	at com.alipay.sofa.ark.container.ArkContainer$1.run(ArkContainer.java:145)
+	at java.lang.Thread.run(Thread.java:750)
