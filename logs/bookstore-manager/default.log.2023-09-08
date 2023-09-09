@@ -1,0 +1,1176 @@
+2023-09-08 19:57:18.703 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 9880 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 19:57:18.707 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 19:57:20.571 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 19:57:20.594 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 19:57:20.730 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 19:57:20.745 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 19:57:20.745 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 19:57:20.987 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 19:57:20.987 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2224 ms
+2023-09-08 19:57:21.317 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 19:57:21.390 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 19:57:21.439 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 19:57:21.893 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xd3e8f7e0] REGISTERED
+2023-09-08 19:57:21.897 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xd3e8f7e0] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 19:57:21.898 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xd3e8f7e0, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 19:57:22.536 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+2023-09-08 19:57:22.537 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 19:57:22.563 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 19:57:22.587 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.assertNoDuplicateOperations(EndpointDiscoverer.java:234)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoint(EndpointDiscoverer.java:201)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:182)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration.jmxMBeanExporter(JmxEndpointAutoConfiguration.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2023-09-08 20:05:49.255 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10236 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 20:05:49.256 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 20:05:51.208 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 20:05:51.279 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 20:05:51.521 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 20:05:51.544 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 20:05:51.545 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 20:05:51.895 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 20:05:51.895 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2574 ms
+2023-09-08 20:05:52.412 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:05:52.734 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 20:05:52.830 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 20:05:53.457 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x86e96147] REGISTERED
+2023-09-08 20:05:53.460 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x86e96147] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 20:05:53.463 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x86e96147, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 20:05:54.899 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+2023-09-08 20:05:54.900 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:05:54.948 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 20:05:54.978 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.assertNoDuplicateOperations(EndpointDiscoverer.java:234)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoint(EndpointDiscoverer.java:201)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:182)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration.jmxMBeanExporter(JmxEndpointAutoConfiguration.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2023-09-08 20:06:51.200 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 5160 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 20:06:51.201 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 20:06:52.611 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 20:06:52.628 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 20:06:52.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 20:06:52.759 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 20:06:52.760 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 20:06:52.937 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 20:06:52.937 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1697 ms
+2023-09-08 20:06:53.217 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:06:53.314 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 20:06:53.356 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 20:06:53.748 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14dae59f] REGISTERED
+2023-09-08 20:06:53.750 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14dae59f] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 20:06:53.752 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14dae59f, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 20:06:54.252 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+2023-09-08 20:06:54.253 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:06:54.278 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 20:06:54.302 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.assertNoDuplicateOperations(EndpointDiscoverer.java:234)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoint(EndpointDiscoverer.java:201)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:182)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration.jmxMBeanExporter(JmxEndpointAutoConfiguration.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2023-09-08 20:13:44.078 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10128 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 20:13:44.080 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 20:13:46.515 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 20:13:46.615 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 20:13:46.825 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 20:13:46.844 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 20:13:46.844 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 20:13:47.100 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 20:13:47.100 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2971 ms
+2023-09-08 20:13:47.541 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:13:47.722 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 20:13:47.820 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 20:13:50.977 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14f30440] REGISTERED
+2023-09-08 20:13:50.982 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14f30440] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 20:13:50.990 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x14f30440, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 20:13:52.968 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+2023-09-08 20:13:52.970 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:13:53.006 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 20:13:53.036 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.assertNoDuplicateOperations(EndpointDiscoverer.java:234)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoint(EndpointDiscoverer.java:201)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:182)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration.jmxMBeanExporter(JmxEndpointAutoConfiguration.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2023-09-08 20:42:42.131 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 3328 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 20:42:42.132 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 20:42:47.124 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 20:42:47.142 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 20:42:47.299 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 20:42:47.311 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 20:42:47.311 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 20:42:47.722 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 20:42:47.722 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 5293 ms
+2023-09-08 20:42:48.102 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:42:48.197 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 20:42:48.253 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 20:42:48.725 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x333cc4c7] REGISTERED
+2023-09-08 20:42:48.728 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x333cc4c7] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 20:42:48.731 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x333cc4c7, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 20:42:49.476 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+2023-09-08 20:42:49.477 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 20:42:49.507 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 20:42:49.534 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jmxMBeanExporter' defined in class path resource [org/springframework/boot/actuate/autoconfigure/endpoint/jmx/JmxEndpointAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.actuate.endpoint.jmx.JmxEndpointExporter]: Factory method 'jmxMBeanExporter' threw exception; nested exception is java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:652)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Unable to map duplicate endpoint operations: [MBean call 'getModuleInfo'] to arkHealthzEndpoint
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.assertNoDuplicateOperations(EndpointDiscoverer.java:234)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoint(EndpointDiscoverer.java:201)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.convertToEndpoints(EndpointDiscoverer.java:182)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.discoverEndpoints(EndpointDiscoverer.java:125)
+	at org.springframework.boot.actuate.endpoint.annotation.EndpointDiscoverer.getEndpoints(EndpointDiscoverer.java:117)
+	at org.springframework.boot.actuate.autoconfigure.endpoint.jmx.JmxEndpointAutoConfiguration.jmxMBeanExporter(JmxEndpointAutoConfiguration.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2023-09-08 21:04:50.132 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 11192 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:04:50.132 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:04:51.806 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:04:51.825 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:04:51.991 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:04:52.007 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:04:52.007 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:04:52.229 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:04:52.229 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2044 ms
+2023-09-08 21:04:52.584 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:04:52.669 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:04:52.862 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:04:53.316 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f] REGISTERED
+2023-09-08 21:04:53.318 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:04:53.320 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:04:54.010 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:04:54.026 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:04:54.089 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:04:54.093 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:04:54.095 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:04:54.095 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:04:54.095 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:04:54.119 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:04:54.120 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 90 ms
+2023-09-08 21:04:54.133 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:04:54.173 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:04:54.184 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:04:54.264 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.322 seconds (JVM running for 10.933)
+2023-09-08 21:05:17.883 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0xbb75b8b9, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:11765]
+2023-09-08 21:05:17.885 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-09-08 21:05:17.887 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] READ: [id: 0x5a275bcb, L:/0:0:0:0:0:0:0:1:1238 - R:/0:0:0:0:0:0:0:1:11766]
+2023-09-08 21:05:17.887 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] READ COMPLETE
+2023-09-08 21:05:42.344 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:05:42.345 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:05:42.353 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-09-08 21:08:25.636 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:08:25.640 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:08:25.640 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4cd9ac4f, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:08:26.216 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:08:40.195 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 1568 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:08:40.197 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:08:41.816 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:08:41.842 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:08:41.994 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:08:42.010 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:08:42.011 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:08:42.252 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:08:42.252 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1996 ms
+2023-09-08 21:08:42.780 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:08:42.894 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:08:42.957 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:08:43.385 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d] REGISTERED
+2023-09-08 21:08:43.388 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:08:43.390 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:08:44.121 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:08:44.138 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:08:44.212 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:08:44.217 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:08:44.218 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:08:44.218 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:08:44.219 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:08:44.250 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:08:44.250 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 108 ms
+2023-09-08 21:08:44.268 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:08:44.310 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:08:44.326 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:08:44.392 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.705 seconds (JVM running for 10.416)
+2023-09-08 21:08:47.319 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:08:47.319 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:08:47.325 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-09-08 21:09:07.072 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:09:11.536 [http-nio-8081-exec-8] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:09:42.850 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:09:42.853 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:09:42.853 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xf8a8744d, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:09:43.030 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:09:54.064 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 11180 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:09:54.065 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:09:55.868 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:09:55.899 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:09:56.106 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:09:56.124 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:09:56.125 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:09:56.379 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:09:56.380 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2264 ms
+2023-09-08 21:09:56.882 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:09:57.021 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:09:57.089 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:09:57.569 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905] REGISTERED
+2023-09-08 21:09:57.572 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:09:57.575 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:09:58.256 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:09:58.274 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:09:58.362 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:09:58.368 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:09:58.369 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:09:58.370 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:09:58.370 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:09:58.409 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:09:58.409 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 130 ms
+2023-09-08 21:09:58.428 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:09:58.483 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:09:58.504 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:09:58.588 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 8.636 seconds (JVM running for 11.196)
+2023-09-08 21:09:58.611 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:09:58.611 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:09:58.618 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-09-08 21:10:14.726 [http-nio-8081-exec-2] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:11:23.260 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:11:23.263 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:11:23.264 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x6bee6905, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:11:23.654 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:11:34.316 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 4012 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:11:34.317 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:11:35.868 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:11:35.887 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:11:36.026 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:11:36.041 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:11:36.041 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:11:36.263 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:11:36.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1891 ms
+2023-09-08 21:11:36.568 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:11:36.666 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:11:36.717 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:11:37.102 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7] REGISTERED
+2023-09-08 21:11:37.105 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:11:37.107 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:11:37.723 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:11:37.737 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:11:37.805 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:11:37.810 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:11:37.812 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:11:37.813 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:11:37.813 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:11:37.843 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:11:37.843 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 102 ms
+2023-09-08 21:11:37.858 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:11:37.899 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:11:37.908 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:11:37.965 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.748 seconds (JVM running for 9.852)
+2023-09-08 21:13:25.517 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:13:25.523 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:13:25.523 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x648d42c7, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:13:25.772 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:14:19.599 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8908 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:14:19.600 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:14:22.389 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:14:22.411 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:14:22.586 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:14:22.606 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:14:22.607 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:14:22.829 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:14:22.830 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3179 ms
+2023-09-08 21:14:23.192 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:14:23.266 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:14:23.309 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:14:23.691 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f] REGISTERED
+2023-09-08 21:14:23.693 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:14:23.695 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:14:24.289 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:14:24.303 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:14:24.362 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:14:24.366 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:14:24.367 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:14:24.368 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:14:24.368 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:14:24.394 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:14:24.394 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 88 ms
+2023-09-08 21:14:24.407 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:14:24.446 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:14:24.456 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:14:24.519 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 8.105 seconds (JVM running for 10.503)
+2023-09-08 21:14:28.383 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:14:28.383 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:14:28.388 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-09-08 21:16:13.417 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:16:13.423 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:16:13.423 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x9e92352f, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:16:13.651 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:16:27.237 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 5296 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:16:27.238 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:16:29.961 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:16:30.002 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:16:30.127 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:16:30.140 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:16:30.140 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:16:30.416 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:16:30.416 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3133 ms
+2023-09-08 21:16:30.762 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:16:30.873 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:16:30.943 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:16:31.548 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d] REGISTERED
+2023-09-08 21:16:31.553 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:16:31.555 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:16:32.312 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:16:32.325 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:16:32.387 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:16:32.391 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:16:32.392 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:16:32.392 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:16:32.392 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:16:32.419 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:16:32.419 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 90 ms
+2023-09-08 21:16:32.432 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:16:32.470 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:16:32.480 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:16:32.535 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 9.575 seconds (JVM running for 12.067)
+2023-09-08 21:16:36.244 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:16:36.244 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:16:36.254 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2023-09-08 21:16:44.072 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:16:44.075 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:16:44.075 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4507300d, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:16:44.194 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:17:23.963 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10428 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:17:23.964 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:17:25.788 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:17:25.804 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:17:25.922 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:17:25.934 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:17:25.934 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:17:26.142 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:17:26.142 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2010 ms
+2023-09-08 21:17:26.443 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:17:26.518 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:17:26.568 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:17:26.981 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7] REGISTERED
+2023-09-08 21:17:26.983 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:17:26.985 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:17:27.543 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:17:27.557 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:17:27.627 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:17:27.632 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:17:27.634 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:17:27.635 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:17:27.635 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:17:27.668 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:17:27.668 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 108 ms
+2023-09-08 21:17:27.682 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:17:27.721 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:17:27.731 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:17:27.790 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.695 seconds (JVM running for 9.989)
+2023-09-08 21:17:34.150 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:17:34.150 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:17:34.158 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-09-08 21:18:33.843 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:18:33.848 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:18:33.848 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x4ef48cd7, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:18:34.051 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:19:42.634 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 1332 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:19:42.637 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:19:44.796 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:19:44.814 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:19:44.938 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:19:44.949 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:19:44.949 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:19:45.140 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:19:45.141 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2433 ms
+2023-09-08 21:19:45.480 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:19:45.561 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:19:45.611 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:19:46.077 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f] REGISTERED
+2023-09-08 21:19:46.079 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:19:46.081 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:19:46.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:19:46.658 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:19:46.723 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:19:46.728 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:19:46.730 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:19:46.730 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:19:46.731 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:19:46.762 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:19:46.762 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 101 ms
+2023-09-08 21:19:46.780 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:19:46.827 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:19:46.838 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:19:46.905 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 9.95 seconds (JVM running for 12.796)
+2023-09-08 21:19:49.248 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:19:49.249 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:19:49.256 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-09-08 21:20:04.574 [http-nio-8081-exec-3] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: version,name,moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: version of type java.lang.String,name of type java.lang.String,moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: version of type java.lang.String,name of type java.lang.String,moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:20:33.864 [http-nio-8081-exec-7] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: version,name,moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: version of type java.lang.String,name of type java.lang.String,moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: version of type java.lang.String,name of type java.lang.String,moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:20:59.920 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:20:59.925 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:20:59.925 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xc87fde8f, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:21:00.054 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:14.327 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8760 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:21:14.328 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:21:16.517 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:21:16.547 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:21:16.756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:16.772 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:21:16.772 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:21:17.030 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:21:17.030 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2637 ms
+2023-09-08 21:21:17.418 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:17.523 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:21:17.589 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:21:18.346 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200] REGISTERED
+2023-09-08 21:21:18.349 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:21:18.351 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:21:19.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:19.080 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:21:19.176 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:21:19.181 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:21:19.182 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:21:19.183 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:21:19.183 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:21:19.219 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:21:19.219 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 134 ms
+2023-09-08 21:21:19.237 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:21:19.297 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:21:19.312 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:21:19.385 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 11.017 seconds (JVM running for 14.036)
+2023-09-08 21:21:19.698 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8844 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:21:19.699 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:21:24.398 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:21:24.420 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:21:24.566 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:24.581 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:21:24.581 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:21:24.804 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:21:24.804 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4974 ms
+2023-09-08 21:21:25.219 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:25.325 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:21:25.379 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:21:25.836 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c5704cc] REGISTERED
+2023-09-08 21:21:25.844 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c5704cc] BIND: 0.0.0.0/0.0.0.0:1239
+2023-09-08 21:21:25.847 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c5704cc, L:/0:0:0:0:0:0:0:0:1239] ACTIVE
+2023-09-08 21:21:27.221 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:27.227 [main] ERROR org.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1075)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	at com.alipay.sofa.ark.springboot.web.ArkTomcatWebServer.addPreviouslyRemovedConnectors(ArkTomcatWebServer.java:259)
+	at com.alipay.sofa.ark.springboot.web.ArkTomcatWebServer.start(ArkTomcatWebServer.java:200)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:438)
+	at sun.nio.ch.Net.bind(Net.java:430)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:300)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:253)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1204)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1290)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:614)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1072)
+	... 20 common frames omitted
+2023-09-08 21:21:27.239 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.IllegalStateException: The host does not contain a Context
+2023-09-08 21:21:27.241 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:27.257 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-09-08 21:21:27.282 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.IllegalStateException: The host does not contain a Context
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:755)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:402)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1247)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1236)
+	at com.alipay.sofa.serverless.arklet.springboot.demo.bookstoremanager.BookstoreManagerApplication.main(BookstoreManagerApplication.java:15)
+Caused by: java.lang.IllegalStateException: The host does not contain a Context
+	at com.alipay.sofa.ark.springboot.web.ArkTomcatWebServer.findContext(ArkTomcatWebServer.java:146)
+	at com.alipay.sofa.ark.springboot.web.ArkTomcatWebServer.start(ArkTomcatWebServer.java:212)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	... 14 common frames omitted
+2023-09-08 21:21:35.609 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:21:35.611 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:21:35.612 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x8c4f9200, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:21:35.706 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:45.540 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 10908 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:21:45.541 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:21:47.010 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:21:47.030 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:21:47.158 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:47.170 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:21:47.170 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:21:47.353 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:21:47.353 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1757 ms
+2023-09-08 21:21:47.681 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:21:47.787 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:21:47.851 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:21:48.288 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a] REGISTERED
+2023-09-08 21:21:48.290 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:21:48.293 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:21:48.847 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:21:48.863 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:21:48.964 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:21:48.969 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:21:48.971 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:21:48.972 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:21:48.972 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:21:49.000 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:21:49.000 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 131 ms
+2023-09-08 21:21:49.016 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:21:49.066 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:21:49.079 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:21:49.146 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 7.367 seconds (JVM running for 10.023)
+2023-09-08 21:22:24.641 [http-nio-8081-exec-3] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:22:24.641 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:22:24.648 [http-nio-8081-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2023-09-08 21:22:40.137 [http-nio-8081-exec-4] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:23:27.756 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:25:27.080 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:25:27.088 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:25:27.089 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x46766a7a, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:25:27.374 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:26:13.411 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 9236 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:26:13.412 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:26:14.892 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:26:14.911 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:26:15.078 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:26:15.092 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:26:15.093 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:26:15.292 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:26:15.292 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1838 ms
+2023-09-08 21:26:15.589 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:26:15.673 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:26:15.718 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:26:16.111 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3] REGISTERED
+2023-09-08 21:26:16.114 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:26:16.116 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:26:16.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:26:16.720 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:26:16.782 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:26:16.786 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:26:16.787 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:26:16.787 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:26:16.787 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:26:16.813 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:26:16.813 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 88 ms
+2023-09-08 21:26:16.826 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:26:16.863 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:26:16.872 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:26:16.919 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 6.397 seconds (JVM running for 8.812)
+2023-09-08 21:26:39.038 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:26:39.038 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:26:39.044 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-09-08 21:26:39.111 [http-nio-8081-exec-1] ERROR o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$InvalidEndpointBadRequestException: 400 BAD_REQUEST "Missing parameters: moduleType"; nested exception is org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String] with root cause
+org.springframework.boot.actuate.endpoint.invoke.MissingParametersException: Failed to invoke operation because the following required parameters were missing: moduleType of type java.lang.String
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.validateRequiredParameters(ReflectiveOperationInvoker.java:84)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:73)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$ServletWebOperationAdapter.handle(AbstractWebMvcEndpointHandlerMapping.java:305)
+	at org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(AbstractWebMvcEndpointHandlerMapping.java:388)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.boot.actuate.autoconfigure.web.servlet.CompositeHandlerAdapter.handle(CompositeHandlerAdapter.java:58)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:750)
+2023-09-08 21:29:35.099 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:29:35.107 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:29:35.107 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x79f36cd3, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:29:35.495 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:30:32.455 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 8788 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:30:32.456 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:30:34.579 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:30:34.651 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:30:34.894 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:30:34.914 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:30:34.914 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:30:35.354 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:30:35.354 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2851 ms
+2023-09-08 21:30:35.686 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:30:35.787 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:30:35.844 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:30:36.344 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2] REGISTERED
+2023-09-08 21:30:36.346 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:30:36.348 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:30:37.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:30:37.110 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:30:37.191 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:30:37.195 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:30:37.197 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:30:37.197 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:30:37.197 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:30:37.229 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:30:37.230 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 115 ms
+2023-09-08 21:30:37.244 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:30:37.284 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:30:37.296 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:30:37.362 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 8.946 seconds (JVM running for 11.545)
+2023-09-08 21:30:51.683 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:30:51.684 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:30:51.690 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-09-08 21:31:08.435 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:31:08.439 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:31:08.440 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0xdede2ce2, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:31:08.595 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:31:25.492 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Starting BookstoreManagerApplication on DESKTOP-EQ2LQMG with PID 5404 (D:\undergraduate\sofa-ark\arklet-springboot-demo\bookstore-manager\target\classes started by Administrator in D:\undergraduate\sofa-ark\arklet-springboot-demo)
+2023-09-08 21:31:25.493 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - No active profile set, falling back to default profiles: default
+2023-09-08 21:31:26.990 [main] WARN  org.apache.catalina.core.StandardContext - A context path must either be an empty string or start with a '/' and do not end with a '/'. The path [/] does not meet these criteria and has been changed to []
+2023-09-08 21:31:27.005 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-09-08 21:31:27.114 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:31:27.125 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:31:27.125 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:31:27.319 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:31:27.319 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+2023-09-08 21:31:27.581 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2023-09-08 21:31:27.652 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2023-09-08 21:31:27.695 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2023-09-08 21:31:28.077 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1] REGISTERED
+2023-09-08 21:31:28.080 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1] BIND: 0.0.0.0/0.0.0.0:1238
+2023-09-08 21:31:28.081 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1, L:/0:0:0:0:0:0:0:0:1238] ACTIVE
+2023-09-08 21:31:28.664 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-09-08 21:31:28.676 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-09-08 21:31:28.737 [main] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2023-09-08 21:31:28.742 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2023-09-08 21:31:28.743 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:31:28.744 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-08 21:31:28.744 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-09-08 21:31:28.769 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-08 21:31:28.769 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 90 ms
+2023-09-08 21:31:28.782 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path ''
+2023-09-08 21:31:28.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2023-09-08 21:31:28.828 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2023-09-08 21:31:28.875 [main] INFO  c.a.s.s.a.s.d.b.BookstoreManagerApplication - Started BookstoreManagerApplication in 6.336 seconds (JVM running for 8.512)
+2023-09-08 21:31:42.843 [http-nio-8081-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-08 21:31:42.844 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-08 21:31:42.858 [http-nio-8081-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2023-09-08 21:32:00.195 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1, L:/0:0:0:0:0:0:0:0:1238] CLOSE
+2023-09-08 21:32:00.198 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1, L:/0:0:0:0:0:0:0:0:1238] INACTIVE
+2023-09-08 21:32:00.199 [nioEventLoopGroup-2-1] INFO  io.netty.handler.logging.LoggingHandler - [id: 0x05105fb1, L:/0:0:0:0:0:0:0:0:1238] UNREGISTERED
+2023-09-08 21:32:00.316 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
