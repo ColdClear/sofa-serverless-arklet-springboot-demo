@@ -9,7 +9,7 @@
 
 * sofa-serverless-arklet-springboot-demo
 * IntellJ IDEA
-* Postman（可选，作为HTTP API使用工具，也可以**使用本demo中的API完成测试**）
+* Postman（可选，作为HTTP API使用工具）
 
 > *本实验采用SofaBoot启动器，同样地可以使用Springboot完成最基础的应用模块装载，只需要在Maven中取消关于ark web插件中sofa boot的依赖引入即可。比如，下述sofa-boot的依赖即可删除。*
 
@@ -239,11 +239,11 @@ bookstore-provider 提供的 bookstore.services.StrategyService 实现类返回�
 ```json
 {
 	// Win 下文件路径
-    "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-provider-1.0.0-ark-biz.jar",
-    // Mac 下文件路径
-    // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-provider-1.0.0-ark-biz.jar",
-    "bizname": "bookstore-provider",
-    "bizversion": "1.0.0"
+  "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-provider-1.0.0-ark-biz.jar",
+  // Mac 下文件路径
+  // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-provider-1.0.0-ark-biz.jar",
+  "bizname": "bookstore-provider",
+  "bizversion": "1.0.0"
 }
 ```
 
@@ -304,11 +304,11 @@ public class StrategyServiceImpl implements StrategyService {
 ```JSON
  {
 	// Win 下文件路径
-    "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-provider-2.0.0-ark-biz.jar",
-    // Mac 下文件路径
-    // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-provider-2.0.0-ark-biz.jar",
-    "bizname": "bookstore-provider",
-    "bizversion": "2.0.0"
+    "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-provider-2.0.0-ark-biz.jar",
+    // Mac 下文件路径
+    // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-provider-2.0.0-ark-biz.jar",
+    "bizname": "bookstore-provider",
+    "bizversion": "2.0.0"
 }
 ```  
 
@@ -319,8 +319,8 @@ public class StrategyServiceImpl implements StrategyService {
 
 ```JSON
 {
-    "bizname": "bookstore-provider",
-    "bizversion": "2.0.0"
+    "bizname": "bookstore-provider",
+    "bizversion": "2.0.0"
 }
 ```
 
@@ -347,11 +347,11 @@ public class StrategyServiceImpl implements StrategyService {
 ```JSON
 {
 	// Win 下文件路径
-    "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-order-provider-1.0.0-ark-biz.jar",
-    // Mac 下文件路径
-    // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-order-provider-1.0.0-ark-biz.jar",
-    "bizname": "bookstore-order-provider",
-    "bizversion": "1.0.0"
+    "arkBizFilePath": "\\{盘符}:\\{文件路径}\\sofa-serverless-arklet-springboot-demo\\bookstore-provider\\target\\bookstore-order-provider-1.0.0-ark-biz.jar",
+    // Mac 下文件路径
+    // "arkBizFilePath": "/{文件路径}/sofa-serverless-arklet-springboot-demo/bookstore-provider/target/bookstore-order-provider-1.0.0-ark-biz.jar",
+    "bizname": "bookstore-order-provider",
+    "bizversion": "1.0.0"
 }
 ```
 
@@ -371,8 +371,8 @@ public class StrategyServiceImpl implements StrategyService {
 
 ```JSON
 {
-    "bizname": "bookstore-order-provider",
-    "bizversion": "1.0.0"
+    "bizname": "bookstore-order-provider",
+    "bizversion": "1.0.0"
 }
 ```
 
