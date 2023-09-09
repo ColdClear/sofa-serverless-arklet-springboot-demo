@@ -1,8 +1,9 @@
-## 实验内容  
-  
+## 实验内容
+
 基于[sofa-ark-dynamic-guides](https://github.com/sofastack-guides/sofa-ark-dynamic-guides/tree/master)的实验模板，使用Sofa-Severless的http调用工具Akrlet，通过 [SOFAArk](https://github.com/sofastack/sofa-ark) 提供的动态模块能力，实现商品列表排序策略的动态变更，以及动态装卸订单查询子应用。能够完成在不重启宿主机，不更改应用配置的情况下实现应用行为改变的任务。
 
-> *注意，本实验由于未将 arklet 上传至 maven repository，因此需要对 arklet 中的 arklet-springboot-starter 执行 `mvn clean install` 打出本地的 jar 包，后供 demo 引用*
+```toc
+```
 
 ## 实验准备
 
@@ -30,18 +31,18 @@
     <artifactId>runtime-sofa-boot-plugin</artifactId>  
 </dependency>
 ```
-## 任务  
+## 任务
 
-### 1、任务准备  
-  
-从 github 上将 demo 工程克隆到本地  
-  
+### 1、任务准备
+
+从 github 上将 demo 工程克隆到本地
+
 ```bash  
 git clone git@github.com:/sofa-serverless-arklet-springboot-demo
 ```  
-  
-然后将工程导入到 IDEA 或者 eclipse，打开工程后，工程目录结构如下：  
-  
+
+然后将工程导入到 IDEA 或者 eclipse，打开工程后，工程目录结构如下：
+
 ```bash  
 ├── bookstore-manager  
 ├── bookstore-order-provider
@@ -49,7 +50,7 @@ git clone git@github.com:/sofa-serverless-arklet-springboot-demo
 ├── bookstore-service
 └── pom.xml  
 ```  
-  
+
 * bookstore-manager 宿主应用，提供基础数据，提供用户端的商品展示 web 页面，用于展示实验效果。
 * bookstore-order-provider 子应用，提供订单数展示的行为，独立提供 web 页面，类比单体应用移植。
 * bookstore-provider 实现 bookstore-service 定义的接口，并将实现类作为一个服务，类比服务注册行为。
@@ -174,7 +175,7 @@ git clone git@github.com:/sofa-serverless-arklet-springboot-demo
 ```
 
 另外在宿主应用中考虑到服务的注册，需要提前加入相应的 provider 依赖。
-### 3、将 dynamic-provider 打包成 ark biz  
+### 3、将 dynamic-provider 打包成 ark biz
 
 在 bookstore-provider/pom.xml 中，增加 ark 打包插件，该模块实现了宿主应用的一个接口，同时暴露一个 rest 服务，添加如下配置。
 
@@ -205,9 +206,9 @@ git clone git@github.com:/sofa-serverless-arklet-springboot-demo
     </plugin>  
 </plugins>
 ```  
-### 4、打包 & 启动宿主应用  
+### 4、打包 & 启动宿主应用
 
-sofa-ark 2.0之后宿主应用可以直接启动，命令行与IDEA内部均可以启动，需要额外增设虚拟机选项 `-Dsofa.ark.embed.enable=true`，然后直接启动 BookStoreManagerApplication 类。  
+sofa-ark 2.0之后宿主应用可以直接启动，命令行与IDEA内部均可以启动，需要额外增设虚拟机选项 `-Dsofa.ark.embed.enable=true`，然后直接启动 BookStoreManagerApplication 类。
 
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813165200.png)
 
@@ -222,13 +223,13 @@ sofa-ark 2.0之后宿主应用可以直接启动，命令行与IDEA内部均可�
 * arklet 启动成功之后的日志信息如下。
 
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813165929.png)
-### 5、 引入默认的排序策略模块  
+### 5、 引入默认的排序策略模块
 
 bookstore-provider 提供的 bookstore.services.StrategyService 实现类返回了默认的价格降序排序模块，现在需要实现在宿主应用启动的情况下完成 biz 模块动态装卸。
 执行 `mvn clean package` 进行打包，此时可以额外地打出新版本（**需要在 pom.xml 中给出版本号**） bookstore-provider ark biz 包，其中后续需要对 `*-ark-biz.jar` 的包进行部署与卸载，如下。
 
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813171005.png)
-  
+
 原来的sofa-ark可以使用 telnet 连接来检测 biz 安装情况，现在可以使用 arklet 提供的一套 http API 完成 biz 装卸，关于telnet使用详见 [sofa-ark-dynamic-guides的第5节](https://github.com/sofastack-guides/sofa-ark-dynamic-guides/tree/master)。
 
 这里使用 Postman 进行 http 请求发送，其中具体使用 `http://localhost:1238/...` 格式 POST 请求，具体请求体如下。
@@ -252,17 +253,17 @@ bookstore-provider 提供的 bookstore.services.StrategyService 实现类返回�
 
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813215926.png)
 
-* 发现已经成功安装两个访问 http://localhost:8080 ，现在展示的是默认的降序排列顺序，如下所示：  
-  
+* 发现已经成功安装两个访问 http://localhost:8080 ，现在展示的是默认的降序排列顺序，如下所示：
+
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813215102.png)
-  
-  
-### 6、新建按照销量排序策略模块  
 
-bookstore-provider 提供的 bookstore.services.StrategyService 实现类返回了默认的**价格降序**排序模块，现在需要开发一个新版本模块，这个新版本模块会按照**价格升序商品列表**。  
 
-首先，修改 bookstoreprovider.serviceImpl.StrategyServiceImpl 实现类如下：  
-  
+### 6、新建按照销量排序策略模块
+
+bookstore-provider 提供的 bookstore.services.StrategyService 实现类返回了默认的**价格降序**排序模块，现在需要开发一个新版本模块，这个新版本模块会按照**价格升序商品列表**。
+
+首先，修改 bookstoreprovider.serviceImpl.StrategyServiceImpl 实现类如下：
+
 ```java  
 @Service  
 @SofaService  
@@ -280,23 +281,23 @@ public class StrategyServiceImpl implements StrategyService {
     }  
 }  
 ```  
-  
-然后，修改 bookstore-provider 版本号 2.0.0:   
-  
+
+然后，修改 bookstore-provider 版本号 2.0.0:
+
 ```xml  
 <version>2.0.0</version>  
 ```  
-  
-最后，由于本 demo 引入 web-ark-plugin，所以每个模块会复用同一个 tomcat 实例，所以需要更改server 的 webContextPath，搜索并修改 bookstore-provider 的 pom.xml 
-  
+
+最后，由于本 demo 引入 web-ark-plugin，所以每个模块会复用同一个 tomcat 实例，所以需要更改server 的 webContextPath，搜索并修改 bookstore-provider 的 pom.xml
+
 ```diff
 --- <webContextPath>provider1</webContextPath>  
 +++ <webContextPath>provider2</webContextPath>  
 ```  
-  
+
 配置完成之后，执行 `mvn clean package` 进行打包，此时可以打包出新版本 bookstore-provider ark biz包，如下。
 
-![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813220756.png)  
+![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813220756.png)
 
 通过 arklet 中 `http://localhost:1238/installBiz` 完成安装请求，安装新版本 bookstore-provider，Request Body 如下，并查询响应结果。
 
@@ -380,3 +381,65 @@ public class StrategyServiceImpl implements StrategyService {
 卸载成功后，使用路由 `http://localhost:1238/queryAllBiz` 查看当前所有模块的状态，发现 bookstore-order-provider 1.0.0 已经删除
 
 ![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230813225252.png)
+
+### 8、使用健康检查查询所有信息
+
+arklet 额外支持指令与 endpoint 拓展完成基于模块的健康检查，这里简单地示范部分查询结果，具体健康检查详见[API](https://github.com/sofastack/sofa-serverless/blob/feature.arklet_v1/arklet/README.md)
+
+* arklet 指令查询
+  使用路由  `http://localhost:1238/health` 在 POST 方法下查询健康状态，如下
+
+![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230910044110.png)
+
+
+从上述返回 `response` 看出，健康检查可以查询到 jvm，cpu，masterBizHealth，masterBiz信息，Biz模块信息与Plugin模块信息六个指标，同样地，下表其中可以组合的条件和查询内容的判定表如下：
+
+|      参数       | 具体值   |          |                |       |           |              |          |              |
+|:---------------:| -------- | -------- |:--------------:|:-----:|:---------:|:------------:|:--------:|:------------:|
+|      type       | -        | "system" |    "system"    | "biz" |   "biz"   |    "biz"     | "plugin" |   "plugin"   |
+|     metrics     | -        | -        | ["cpu", "jvm"] |   -   |     -     |      -       |    -     |      -       |
+|   moduleName    | -        | -        |       -        |   -   | "bizName" |  "bizName"   |    -     | "pluginName" |
+|  moduleVersion  | -        | -        |       -        |   -   |     -     | "bizVersion" |    -     |      -       |
+|      指标       | response |          |                |       |           |              |          |              |
+|       jvm       | ✔        | ✔        |       ✔        |       |           |              |          |              |
+|       cpu       | ✔        | ✔        |       ✔        |       |           |              |          |              |
+| masterBizHealth | ✔        | ✔        |                |       |           |              |          |              |
+|  masterBizInfo  | ✔        |          |                |       |           |              |          |              |
+|   bizListInfo   | ✔        |          |                |   ✔   |     ✔     |              |          |              |
+| pluginListInfo  | ✔        |          |                |       |           |              |    ✔     |      ✔       |
+|     bizInfo     |          |          |                |       |           |      ✔       |          |              |
+
+* endpoint 拓展查询
+
+arklet 基于 `SpringBoot-Actuator` 提供了两种 endpoint 查询方式，其中默认配置了 `actuator` 的基本属性：
+
+* endpoints exposure include: `*`
+* endpoints base path: `/`
+* endpoints sever port: `8080`
+
+**第一种查询所有健康的指标**
+在 `GET` 方法下使用路由 `http://localhost:8081/arkHealthz` 可以查询所有健康信息（同上六个指标），并额外返回健康的状态与 `HealthCode`，如下
+
+![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230910044032.png)
+
+其中 `HealthCode` 如下：
+* `HEALTHY(200)`: 健康检测通过
+* `UNHEALTHY(400)`: 出现不健康的指标
+* `ENDPOINT_NOT_FOUND(404)`: 当前 endpoint  不存在
+* `ENDPOINT_PROCESS_INTERNAL_ERROR(500)`:  在获取健康检测中出错
+
+`arkHealthz` 支持三种查询：
+* `http://localhost:8081/arkHealthz` 查询所有健康信息
+* `http://localhost:8081/arkHealthz/{moduleType}` 查询相应类型的健康信息
+* `http://localhost:8081/arkHealthz/{moduleType}/{moduleName}/{moduleVersion}` 查询具体模块的信息
+
+**第二种查询相应是否健康，返回 HealthCode**
+在 `GET` 方法下使用路由 `http://localhost:8081/arkHealthCode` 可以查询健康代码（`HealthCode`），如下
+
+![image.png](https://picgo-1313342257.cos.ap-nanjing.myqcloud.com/test/20230910044801.png)
+
+
+`arkHealthCode` 同样支持三种查询：
+* `http://localhost:8081/arkHealthz` 查询所有健康信息，并返回 `HealthCode`
+* `http://localhost:8081/arkHealthz/{moduleType}` 查询相应类型的健康信息
+* `http://localhost:8081/arkHealthz/{moduleType}/{moduleName}/{moduleVersion}` 查询具体模块的信息

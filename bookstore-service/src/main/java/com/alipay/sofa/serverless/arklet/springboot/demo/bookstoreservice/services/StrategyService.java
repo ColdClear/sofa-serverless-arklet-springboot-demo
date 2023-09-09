@@ -9,7 +9,11 @@ import java.util.List;
  * @author Lunarscave
  */
 public interface StrategyService {
+    /**
+    * get strategy and return bookList
+    */
     List<BookInfo> strategy(List<BookInfo> books);
+
 
     String getStrategyName();
 }

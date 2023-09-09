@@ -12,10 +12,8 @@
     <packaging>pom</packaging>
 
     <groupId>com.example</groupId>
-    <artifactId>sofa-serverless-arklet-springboot-demo</artifactId>
+    <artifactId>arklet-springboot-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sofa-serverless-arklet-springboot-demo</name>
-    <description>sofa-serverless-arklet-springboot-demo</description>
 
     <modules>
         <module>bookstore-manager</module>
@@ -26,8 +24,8 @@
 
     <properties>
         <java.version>1.8</java.version>
-        <sofa.ark.version>2.1.3</sofa.ark.version>
-        <curator.version>2.9.1</curator.version>
+        <sofa.ark.version>2.2.3-SNAPSHOT</sofa.ark.version>
+        <spring.boot.version>2.5.12</spring.boot.version>
     </properties>
 
     <dependencies>
